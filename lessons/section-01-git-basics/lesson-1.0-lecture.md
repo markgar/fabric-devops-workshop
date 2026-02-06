@@ -2,6 +2,7 @@
 marp: true
 theme: default
 paginate: true
+transition: fade
 ---
 
 <!-- _class: lead -->
