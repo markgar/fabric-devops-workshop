@@ -32,6 +32,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 | Lesson | Title | Duration |
 |--------|-------|----------|
+| 2.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lectures/section-02.html) | 15 min |
 | 2.1 | [Setting Up a Deployment Pipeline](lessons/section-02-deployment-pipelines/lesson-2.1-setting-up-a-deployment-pipeline.md) | 15-20 min |
 | 2.2 | [Tagging Releases](lessons/section-02-deployment-pipelines/lesson-2.2-tagging-releases.md) | 10-15 min |
 | 2.3 | [Deploying to Production](lessons/section-02-deployment-pipelines/lesson-2.3-deploying-to-production.md) | 10-15 min |
