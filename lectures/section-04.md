@@ -80,7 +80,7 @@ Each developer gets their **own branch** and their **own workspace**
 - **Branch policies** block direct commits to `main`
 - **Pull requests** are the only way in — with review and approval
 - **Branch out** in Fabric creates the branch + workspace in one step
-- Done? Delete the branch and workspace — they're temporary
+- Done? Delete the branch — or **keep your workspace** and switch it to the next feature branch
 
 ---
 
