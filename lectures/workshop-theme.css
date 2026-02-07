@@ -1,0 +1,211 @@
+/* @theme workshop */
+@import 'default';
+
+/* ============================================
+   Layout utilities
+   ============================================ */
+
+/* Horizontal flex row, centered */
+.flow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.flow-wide { gap: 60px; align-items: flex-start; }
+.flow-tight { gap: 8px; }
+.flow-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.flow-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Centered block with left-aligned contents */
+.centered-block {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.left-aligned {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* Side-by-side comparison */
+.comparison {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.comparison h4 { margin: 0 0 10px 0; }
+
+/* ============================================
+   Boxes and items
+   ============================================ */
+
+/* Generic colored box */
+.box {
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.box-sm { font-size: 0.7em; padding: 6px 14px; }
+.box-xs { font-size: 0.55em; padding: 3px 8px; }
+.box-item { font-size: 0.5em; padding: 3px 8px; border-radius: 4px; }
+
+/* Color variants */
+.bg-blue       { background: #4A90D9; }
+.bg-blue-muted { background: #6C8EBF; }
+.bg-primary    { background: #4063D8; }
+.bg-orange     { background: #E8833A; }
+.bg-purple     { background: #8B5CF6; }
+.bg-yellow     { background: #F5C542; color: #000; }
+.bg-green-dev  { background: #82B366; }
+.bg-green-test { background: #D4A843; }
+.bg-green-prod { background: #2E8B57; }
+.bg-red        { background: #DC3545; }
+.bg-green      { background: #28A745; }
+.bg-mono       { background: #eee; color: #333; font-family: monospace; }
+
+/* ============================================
+   Cards (bordered containers)
+   ============================================ */
+
+.card {
+  border-radius: 10px;
+  padding: 16px 24px;
+  text-align: center;
+}
+.card-sm { padding: 14px 18px; }
+.card-md { padding: 12px 16px; }
+.card-title {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.card-title-sm { font-weight: bold; font-size: 0.75em; }
+.card-title-md { font-weight: bold; font-size: 0.7em; }
+.card-subtitle {
+  font-size: 0.6em;
+  color: #555;
+  margin-top: 4px;
+}
+.card-subtitle-sm { font-size: 0.55em; color: #555; margin-top: 4px; }
+
+/* Card color variants */
+.card-workspace {
+  border: 2px solid #0078D4;
+  background: #e8eef7;
+}
+.card-git {
+  border: 2px solid #F05033;
+  background: #fdf0ed;
+}
+.card-dev {
+  border: 2px solid #82B366;
+  background: #e8f5e9;
+}
+.card-test {
+  border: 2px solid #D4A843;
+  background: #fef9e7;
+}
+.card-prod {
+  border: 2px solid #2E8B57;
+  background: #e8f5f0;
+}
+
+/* ============================================
+   Arrows and connectors
+   ============================================ */
+
+.arrow       { font-size: 1.2em; }
+.arrow-lg    { font-size: 1.5em; }
+.arrow-md    { font-size: 1.4em; }
+.arrow-label { font-size: 0.6em; color: #555; }
+.arrow-label-sm { font-size: 0.55em; color: #555; }
+
+/* Circle (for main codebase, etc.) */
+.circle {
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ============================================
+   Numbered steps
+   ============================================ */
+
+.step {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.step-number {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: #4063D8;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.step-text { font-size: 0.8em; }
+
+/* ============================================
+   Timeline (for tagging releases)
+   ============================================ */
+
+.timeline {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.timeline-dot {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: #6C8EBF;
+}
+.timeline-dot-tag {
+  background: #82B366;
+  border: 3px solid #2E8B57;
+}
+.timeline-line {
+  width: 40px;
+  height: 2px;
+  background: #999;
+}
+.timeline-labels {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+.timeline-spacer { width: 56px; }
+.timeline-tag {
+  text-align: center;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #2E8B57;
+  width: 56px;
+}

@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'lectures/section-*.md'
+      - 'lectures/workshop-theme.css'
       - 'index.html'
       - '.nojekyll'
       - '.github/workflows/deploy-lectures.yml'
@@ -37,7 +38,7 @@ jobs:
 
       - name: Build lecture slides
         run: |
-          find lectures -name "section-*.md" -exec marp --html {} \;
+          find lectures -name "section-*.md" -exec marp --html --theme lectures/workshop-theme.css {} \;
 
       - name: Prepare Pages content
         run: |

@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: default
+theme: workshop
 paginate: true
 transition: fade
 ---
@@ -15,25 +15,25 @@ Moving Fabric content from Dev → Test → Prod
 
 # Why Separate Environments?
 
-<div style="display: flex; gap: 40px; justify-content: center; margin: 20px 0;">
+<div class="comparison">
 
 <div>
-<h4 style="margin: 0 0 10px 0;">❌ Without Environments</h4>
-<div style="display: flex; flex-direction: column; gap: 6px;">
-  <div style="border-radius: 6px; padding: 8px 16px; background: #DC3545; color: #fff; font-size: 0.7em;">Developers break production</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #DC3545; color: #fff; font-size: 0.7em;">Users see half-finished work</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #DC3545; color: #fff; font-size: 0.7em;">No way to test before go-live</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #DC3545; color: #fff; font-size: 0.7em;">No audit trail of changes</div>
+<h4>❌ Without Environments</h4>
+<div class="flow-col" style="gap: 6px;">
+  <div class="box box-sm bg-red">Developers break production</div>
+  <div class="box box-sm bg-red">Users see half-finished work</div>
+  <div class="box box-sm bg-red">No way to test before go-live</div>
+  <div class="box box-sm bg-red">No audit trail of changes</div>
 </div>
 </div>
 
 <div>
-<h4 style="margin: 0 0 10px 0;">✅ With Environments</h4>
-<div style="display: flex; flex-direction: column; gap: 6px;">
-  <div style="border-radius: 6px; padding: 8px 16px; background: #28A745; color: #fff; font-size: 0.7em;">Dev is isolated from production</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #28A745; color: #fff; font-size: 0.7em;">Test before promoting</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #28A745; color: #fff; font-size: 0.7em;">Controlled, deliberate releases</div>
-  <div style="border-radius: 6px; padding: 8px 16px; background: #28A745; color: #fff; font-size: 0.7em;">Clear history of what deployed</div>
+<h4>✅ With Environments</h4>
+<div class="flow-col" style="gap: 6px;">
+  <div class="box box-sm bg-green">Dev is isolated from production</div>
+  <div class="box box-sm bg-green">Test before promoting</div>
+  <div class="box box-sm bg-green">Controlled, deliberate releases</div>
+  <div class="box box-sm bg-green">Clear history of what deployed</div>
 </div>
 </div>
 
@@ -45,20 +45,20 @@ Moving Fabric content from Dev → Test → Prod
 
 A Fabric feature that lets you **deploy content between workspaces** in stages
 
-<div style="display: flex; gap: 8px; justify-content: center; align-items: center; margin: 30px 0;">
-  <div style="border: 2px solid #82B366; border-radius: 10px; padding: 16px 24px; background: #e8f5e9; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.8em;">🛠️ Development</div>
-    <div style="font-size: 0.55em; color: #555; margin-top: 4px;">Build & iterate</div>
+<div class="flow" style="margin: 30px 0;">
+  <div class="card card-dev">
+    <div class="card-title">🛠️ Development</div>
+    <div class="card-subtitle-sm">Build & iterate</div>
   </div>
-  <span style="font-size: 1.5em;">→</span>
-  <div style="border: 2px solid #D4A843; border-radius: 10px; padding: 16px 24px; background: #fef9e7; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.8em;">🧪 Test</div>
-    <div style="font-size: 0.55em; color: #555; margin-top: 4px;">Validate & review</div>
+  <span class="arrow-lg">→</span>
+  <div class="card card-test">
+    <div class="card-title">🧪 Test</div>
+    <div class="card-subtitle-sm">Validate & review</div>
   </div>
-  <span style="font-size: 1.5em;">→</span>
-  <div style="border: 2px solid #2E8B57; border-radius: 10px; padding: 16px 24px; background: #e8f5f0; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.8em;">🏭 Production</div>
-    <div style="font-size: 0.55em; color: #555; margin-top: 4px;">Live for users</div>
+  <span class="arrow-lg">→</span>
+  <div class="card card-prod">
+    <div class="card-title">🏭 Production</div>
+    <div class="card-subtitle-sm">Live for users</div>
   </div>
 </div>
 
@@ -70,40 +70,40 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
 
 # How It Works
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: center; margin: 20px 0;">
-  <div style="border: 2px solid #82B366; border-radius: 10px; padding: 12px 16px; background: #e8f5e9; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.7em;">Dev Workspace</div>
-    <div style="display: flex; flex-direction: column; gap: 3px; margin-top: 6px;">
-      <div style="border-radius: 4px; padding: 3px 8px; background: #4A90D9; color: #fff; font-size: 0.5em;">Lakehouse</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #E8833A; color: #fff; font-size: 0.5em;">Notebook</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #8B5CF6; color: #fff; font-size: 0.5em;">Semantic Model</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #F5C542; color: #000; font-size: 0.5em;">Report</div>
+<div class="flow" style="margin: 20px 0;">
+  <div class="card card-md card-dev">
+    <div class="card-title-md">Dev Workspace</div>
+    <div class="flow-col" style="margin-top: 6px; gap: 3px;">
+      <div class="box box-item bg-blue">Lakehouse</div>
+      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-purple">Semantic Model</div>
+      <div class="box box-item bg-yellow">Report</div>
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <div style="font-size: 0.55em; color: #555;">Deploy</div>
-    <span style="font-size: 1.4em;">→</span>
+  <div class="flow-col-center">
+    <div class="arrow-label-sm">Deploy</div>
+    <span class="arrow-md">→</span>
   </div>
-  <div style="border: 2px solid #D4A843; border-radius: 10px; padding: 12px 16px; background: #fef9e7; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.7em;">Test Workspace</div>
-    <div style="display: flex; flex-direction: column; gap: 3px; margin-top: 6px;">
-      <div style="border-radius: 4px; padding: 3px 8px; background: #4A90D9; color: #fff; font-size: 0.5em;">Lakehouse</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #E8833A; color: #fff; font-size: 0.5em;">Notebook</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #8B5CF6; color: #fff; font-size: 0.5em;">Semantic Model</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #F5C542; color: #000; font-size: 0.5em;">Report</div>
+  <div class="card card-md card-test">
+    <div class="card-title-md">Test Workspace</div>
+    <div class="flow-col" style="margin-top: 6px; gap: 3px;">
+      <div class="box box-item bg-blue">Lakehouse</div>
+      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-purple">Semantic Model</div>
+      <div class="box box-item bg-yellow">Report</div>
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <div style="font-size: 0.55em; color: #555;">Deploy</div>
-    <span style="font-size: 1.4em;">→</span>
+  <div class="flow-col-center">
+    <div class="arrow-label-sm">Deploy</div>
+    <span class="arrow-md">→</span>
   </div>
-  <div style="border: 2px solid #2E8B57; border-radius: 10px; padding: 12px 16px; background: #e8f5f0; text-align: center;">
-    <div style="font-weight: bold; font-size: 0.7em;">Prod Workspace</div>
-    <div style="display: flex; flex-direction: column; gap: 3px; margin-top: 6px;">
-      <div style="border-radius: 4px; padding: 3px 8px; background: #4A90D9; color: #fff; font-size: 0.5em;">Lakehouse</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #E8833A; color: #fff; font-size: 0.5em;">Notebook</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #8B5CF6; color: #fff; font-size: 0.5em;">Semantic Model</div>
-      <div style="border-radius: 4px; padding: 3px 8px; background: #F5C542; color: #000; font-size: 0.5em;">Report</div>
+  <div class="card card-md card-prod">
+    <div class="card-title-md">Prod Workspace</div>
+    <div class="flow-col" style="margin-top: 6px; gap: 3px;">
+      <div class="box box-item bg-blue">Lakehouse</div>
+      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-purple">Semantic Model</div>
+      <div class="box box-item bg-yellow">Report</div>
     </div>
   </div>
 </div>
@@ -118,28 +118,28 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
 
 Use **Git tags** to mark a point-in-time snapshot of your codebase
 
-<div style="display: flex; gap: 6px; justify-content: center; align-items: center; margin: 30px 0;">
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #6C8EBF;"></div>
-  <div style="width: 40px; height: 2px; background: #999;"></div>
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #6C8EBF;"></div>
-  <div style="width: 40px; height: 2px; background: #999;"></div>
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #82B366; border: 3px solid #2E8B57;"></div>
-  <div style="width: 40px; height: 2px; background: #999;"></div>
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #6C8EBF;"></div>
-  <div style="width: 40px; height: 2px; background: #999;"></div>
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #6C8EBF;"></div>
-  <div style="width: 40px; height: 2px; background: #999;"></div>
-  <div style="border-radius: 50%; width: 16px; height: 16px; background: #82B366; border: 3px solid #2E8B57;"></div>
+<div class="timeline">
+  <div class="timeline-dot"></div>
+  <div class="timeline-line"></div>
+  <div class="timeline-dot"></div>
+  <div class="timeline-line"></div>
+  <div class="timeline-dot timeline-dot-tag"></div>
+  <div class="timeline-line"></div>
+  <div class="timeline-dot"></div>
+  <div class="timeline-line"></div>
+  <div class="timeline-dot"></div>
+  <div class="timeline-line"></div>
+  <div class="timeline-dot timeline-dot-tag"></div>
 </div>
 
-<div style="display: flex; gap: 6px; justify-content: center; align-items: flex-start; margin: 0;">
-  <div style="width: 56px;"></div>
-  <div style="width: 56px;"></div>
-  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v1</div>
-  <div style="width: 56px;"></div>
-  <div style="width: 56px;"></div>
-  <div style="width: 56px;"></div>
-  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v2</div>
+<div class="timeline-labels">
+  <div class="timeline-spacer"></div>
+  <div class="timeline-spacer"></div>
+  <div class="timeline-tag">🏷️ v1</div>
+  <div class="timeline-spacer"></div>
+  <div class="timeline-spacer"></div>
+  <div class="timeline-spacer"></div>
+  <div class="timeline-tag">🏷️ v2</div>
 </div>
 
 - Tags let you **label a release** (e.g., `v1`, `v2`)
@@ -150,27 +150,27 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
 
 # The Release Workflow
 
-<div style="display: flex; justify-content: center; margin: 20px 0;">
-<div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+<div class="centered-block">
+<div class="left-aligned">
 
-<div style="display: flex; gap: 12px; align-items: center;">
-  <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">1</div>
-  <div style="font-size: 0.8em;">Build and test your changes in the <strong>Dev</strong> workspace</div>
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="step-text">Build and test your changes in the <strong>Dev</strong> workspace</div>
 </div>
 
-<div style="display: flex; gap: 12px; align-items: center;">
-  <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">2</div>
-  <div style="font-size: 0.8em;"><strong>Commit</strong> your changes to the Git repository</div>
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="step-text"><strong>Commit</strong> your changes to the Git repository</div>
 </div>
 
-<div style="display: flex; gap: 12px; align-items: center;">
-  <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">3</div>
-  <div style="font-size: 0.8em;"><strong>Tag</strong> the release in Git (e.g., <code>v1</code>)</div>
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="step-text"><strong>Tag</strong> the release in Git (e.g., <code>v1</code>)</div>
 </div>
 
-<div style="display: flex; gap: 12px; align-items: center;">
-  <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">4</div>
-  <div style="font-size: 0.8em;"><strong>Deploy</strong> from Dev → Test → Prod using the deployment pipeline</div>
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="step-text"><strong>Deploy</strong> from Dev → Test → Prod using the deployment pipeline</div>
 </div>
 
 </div>
