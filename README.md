@@ -23,7 +23,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 | Lesson | Title | Duration |
 |--------|-------|----------|
-| 1.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lessons/section-01-git-basics/lesson-1.0-lecture.html) | 15 min |
+| 1.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lectures/section-01.html) | 15 min |
 | 1.1 | [Connecting Your Workspace to Git](lessons/section-01-git-basics/lesson-1.1-connecting-your-workspace-to-git.md) | 15-20 min |
 | 1.2 | [Making Your First Commit](lessons/section-01-git-basics/lesson-1.2-making-your-first-commit.md) | 20-25 min |
 | 1.3 | [Undoing Uncommitted Changes](lessons/section-01-git-basics/lesson-1.3-undoing-uncommitted-changes.md) | 5-10 min |

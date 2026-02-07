@@ -1,2 +1,2 @@
 # Generated lecture slides (built by GitHub Actions)
-lessons/**/lesson-*.0-lecture.html
+lectures/section-*.html
