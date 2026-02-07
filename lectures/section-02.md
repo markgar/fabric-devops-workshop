@@ -135,14 +135,14 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
 <div style="display: flex; gap: 6px; justify-content: center; align-items: flex-start; margin: 0;">
   <div style="width: 56px;"></div>
   <div style="width: 56px;"></div>
-  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v1.0</div>
+  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v1</div>
   <div style="width: 56px;"></div>
   <div style="width: 56px;"></div>
   <div style="width: 56px;"></div>
-  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v2.0</div>
+  <div style="text-align: center; font-size: 0.6em; font-weight: bold; color: #2E8B57; width: 56px;">🏷️ v2</div>
 </div>
 
-- Tags let you **label a release** (e.g., `v1.0`, `v2.0`)
+- Tags let you **label a release** (e.g., `v1`, `v2`)
 - You can always **go back and view** what was in a release
 - Tag before you deploy — it creates a **record of what went to production**
 
@@ -150,7 +150,8 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
 
 # The Release Workflow
 
-<div style="display: flex; flex-direction: column; gap: 12px; align-items: center; margin: 20px 0;">
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
 
 <div style="display: flex; gap: 12px; align-items: center;">
   <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">1</div>
@@ -164,7 +165,7 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
 
 <div style="display: flex; gap: 12px; align-items: center;">
   <div style="border-radius: 50%; width: 36px; height: 36px; background: #4063D8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em;">3</div>
-  <div style="font-size: 0.8em;"><strong>Tag</strong> the release in Git (e.g., <code>v1.0</code>)</div>
+  <div style="font-size: 0.8em;"><strong>Tag</strong> the release in Git (e.g., <code>v1</code>)</div>
 </div>
 
 <div style="display: flex; gap: 12px; align-items: center;">
@@ -172,6 +173,7 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
   <div style="font-size: 0.8em;"><strong>Deploy</strong> from Dev → Test → Prod using the deployment pipeline</div>
 </div>
 
+</div>
 </div>
 
 This gives you a **repeatable, auditable** release process
