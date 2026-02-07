@@ -44,6 +44,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 | Lesson | Title | Duration |
 |--------|-------|----------|
+| 3.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lectures/section-03.html) | 10 min |
 | 3.1 | [Adding a Lakehouse to Your Notebook](lessons/section-03-deployment-rules/lesson-3.1-adding-a-lakehouse-to-your-notebook.md) | 10-15 min |
 | 3.2 | [Creating Deployment Rules](lessons/section-03-deployment-rules/lesson-3.2-creating-deployment-rules.md) | 10-15 min |
 
@@ -51,6 +52,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 | Lesson | Title | Duration |
 |--------|-------|---------|
+| 4.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lectures/section-04.html) | 10 min |
 | 4.1 | [Inner Loop and Outer Loop](lessons/section-04-feature-branches/lesson-4.1-inner-loop-outer-loop.md) | 5 min |
 | 4.2 | [Branching Strategy](lessons/section-04-feature-branches/lesson-4.2-branching-strategy.md) | 10 min |
 | 4.3 | [Configuring Branch Policies](lessons/section-04-feature-branches/lesson-4.3-configuring-branch-policies.md) | 10 min |
@@ -62,6 +64,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 | Lesson | Title | Duration |
 |--------|-------|---------|
+| 5.0 | [Lecture](https://markgar.github.io/fabric-devops-workshop/lectures/section-05.html) | 10 min |
 | 5.1 | [What Are Variable Libraries?](lessons/section-05-variable-libraries/lesson-5.1-what-are-variable-libraries.md) | 5-10 min |
 | 5.2 | [Creating a Variable Library](lessons/section-05-variable-libraries/lesson-5.2-creating-a-variable-library.md) | 10-15 min |
 | 5.3 | [Using Library Variables in a Notebook](lessons/section-05-variable-libraries/lesson-5.3-using-library-variables-in-a-notebook.md) | 10-15 min |
