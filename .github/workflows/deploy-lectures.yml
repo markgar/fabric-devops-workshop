@@ -1,0 +1,59 @@
+name: Deploy lecture slides
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lessons/**/lesson-*.0-lecture.md'
+      - 'index.html'
+      - '.nojekyll'
+      - '.github/workflows/deploy-lectures.yml'
+
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Build lecture slides
+        run: |
+          find lessons -name "lesson-*.0-lecture.md" -exec marp --html {} \;
+
+      - name: Prepare Pages content
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp .nojekyll _site/
+          find lessons -name "lesson-*.0-lecture.html" | while read f; do
+            dir=$(dirname "$f")
+            mkdir -p "_site/$dir"
+            cp "$f" "_site/$dir/"
+          done
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
