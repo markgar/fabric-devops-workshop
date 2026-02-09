@@ -6,7 +6,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 
 ## Prerequisites
 
-- A Microsoft Fabric capacity (trial or paid)
+- Each attendee of the workshop needs a pre-created workspace attached to a Premium capacity or a Fabric capacity
 - A GitHub account OR an Azure DevOps organization
 - For GitHub: A [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with **repo** scope (classic) or **Contents** read/write permission (fine-grained)
 - For GitHub: Admin access to your repository (needed to configure branch protection rules in Section 4)
