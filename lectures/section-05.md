@@ -5,8 +5,7 @@ paginate: true
 transition: fade
 ---
 
-> 📺 This file is a Marp slide deck, not a regular markdown document.
-> To view the slides, use the hosted link in the workshop README.
+# 📺 This file is a Marp slide deck, not a regular markdown document. To view the slides, use the hosted link in the workshop README.
 
 <!-- _class: lead -->
 
