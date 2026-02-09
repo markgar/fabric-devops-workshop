@@ -9,10 +9,6 @@ transition: fade
 
 Source control, commits, and your safety net
 
-<!-- 
-_Note: This is a Marp slide. Use the link on the main README to view.
--->
-
 ---
 
 # Why Source Control?

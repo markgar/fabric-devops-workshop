@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'lectures/section-*.md'
-      - 'lectures/workshop-theme.css'
+      - 'marp-source/section-*.md'
+      - 'marp-source/workshop-theme.css'
       - 'index.html'
       - '.nojekyll'
       - '.github/workflows/deploy-lectures.yml'
@@ -38,14 +38,14 @@ jobs:
 
       - name: Build lecture slides
         run: |
-          find lectures -name "section-*.md" -exec marp --html --theme lectures/workshop-theme.css {} \;
+          find marp-source -name "section-*.md" -exec marp --html --theme marp-source/workshop-theme.css {} \;
 
       - name: Prepare Pages content
         run: |
-          mkdir -p _site/lectures
+          mkdir -p _site/marp-source
           cp index.html _site/
           cp .nojekyll _site/
-          cp lectures/section-*.html _site/lectures/
+          cp marp-source/section-*.html _site/marp-source/
 
       - uses: actions/upload-pages-artifact@v3
         with:
