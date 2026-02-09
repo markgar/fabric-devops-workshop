@@ -24,7 +24,7 @@ This reinforces the workflow you'll use every time you deploy:
 4. Click **Draft a new release**
 5. Click **Choose a tag**
 6. Click **Create a new tag**
-7. Enter a new tag: `v2`
+7. Enter a new **tag name**: `v2`
 8. Click **Create new tag: v2 on publish**
 9. Enter a **Release title**: `v2`
 10. In the description, note what's new:

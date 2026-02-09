@@ -47,6 +47,11 @@ Each lesson follows this pattern:
 - Group related sub-steps as nested bullets under a numbered item
 - Keep sections short (3-6 steps each)
 
+### Inline Formatting Convention
+- **Bold** for UI elements: buttons, menu items, tabs, field labels, panel names (e.g., Click **Commit**, Select **GitHub**, the **Branch** dropdown)
+- `Code` for user-typed values, technical identifiers, branch names, file names (e.g., `v1`, `main`, `FabricDevOps-Workshop`, `01-hello-fabric`)
+- When a step has both a field label and a value, bold the label and code the value (e.g., Enter a **Release title**: `v1`)
+
 ### Formatting Conventions
 - Use tables for comparisons (Without X | With X)
 - Use ASCII diagrams for flows and architecture

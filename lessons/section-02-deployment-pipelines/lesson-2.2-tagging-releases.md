@@ -63,7 +63,7 @@ Let's tag your current commit before deploying it to production.
 5. Click **Create a new release**
 6. Click **Choose a tag**
 7. Click **Create a new tag**
-8. Type a new tag name: `v1` (or the next version number if you already have releases)
+8. Type a new **tag name**: `v1` (or the next version number if you already have releases)
 9. Click **Create new tag: v1 on publish**
 10. For **Target**, make sure `main` (or your branch) is selected
 11. Enter a **Release title**: `v1`

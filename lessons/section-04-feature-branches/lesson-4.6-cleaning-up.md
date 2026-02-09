@@ -27,7 +27,7 @@ In this lesson, you will:
 If you didn't delete the branch when merging, do it now.
 
 1. Go to your repository on [GitHub](https://github.com)
-2. Click **Branches** (or find it under the Code tab)
+2. Click **Branches** (or find it under the **Code** tab)
 3. Find `feature-add-greeting` in the list
 4. Click the trash icon to delete it
 
