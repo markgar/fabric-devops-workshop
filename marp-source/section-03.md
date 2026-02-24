@@ -63,7 +63,7 @@ A deployment rule says: *"When deploying to this stage, swap this setting."*
   <div class="card card-md card-prod">
     <div class="card-title-md">Prod Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-orange">Transform Orders</div>
+      <div class="box box-item" style="background: #C96E2E;">Transform Orders</div>
       <div class="arrow-label">↓ default</div>
       <div class="box box-item bg-green">Sales Bronze (Prod) ✅</div>
     </div>

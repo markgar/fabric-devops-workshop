@@ -81,10 +81,10 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
   <div class="card card-md card-prod">
     <div class="card-title-md">Prod Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-blue">Sales Bronze</div>
-      <div class="box box-item bg-orange">Transform Orders</div>
-      <div class="box box-item bg-purple">Sales Analysis</div>
-      <div class="box box-item bg-yellow">Revenue Dashboard</div>
+      <div class="box box-item" style="background: #3A78B8;">Sales Bronze</div>
+      <div class="box box-item" style="background: #C96E2E;">Transform Orders</div>
+      <div class="box box-item" style="background: #7248D4;">Sales Analysis</div>
+      <div class="box box-item" style="background: #D4AD35; color: #000;">Revenue Dashboard</div>
     </div>
   </div>
 </div>
