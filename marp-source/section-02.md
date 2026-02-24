@@ -8,7 +8,7 @@ transition: fade
 
 # Deployment Pipelines
 
-Moving Fabric content from Dev → Test → Prod
+Moving Fabric content from Dev → Prod
 
 ---
 
@@ -151,7 +151,7 @@ Use **Git tags** to mark a point-in-time snapshot of your codebase
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="step-text"><strong>Deploy</strong> from Dev → Test → Prod using the deployment pipeline</div>
+  <div class="step-text"><strong>Deploy</strong> from Dev → Prod using the deployment pipeline</div>
 </div>
 
 </div>
