@@ -19,9 +19,9 @@ Your notebook uses a **default lakehouse**. When you deploy to Prod, which lakeh
   <div class="card card-md card-dev">
     <div class="card-title-md">Dev Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
       <div class="arrow-label">↓ default</div>
-      <div class="box box-item bg-blue">workshop_lakehouse</div>
+      <div class="box box-item bg-blue">Sales Bronze</div>
     </div>
   </div>
   <div class="flow-col-center">
@@ -31,9 +31,9 @@ Your notebook uses a **default lakehouse**. When you deploy to Prod, which lakeh
   <div class="card card-md card-prod">
     <div class="card-title-md">Prod Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
       <div class="arrow-label">↓ default</div>
-      <div class="box box-item" style="background: #DC3545; color: #fff;">workshop_lakehouse (DEV!) 💥</div>
+      <div class="box box-item" style="background: #DC3545; color: #fff;">Sales Bronze (DEV!) 💥</div>
     </div>
   </div>
 </div>
@@ -50,9 +50,9 @@ A deployment rule says: *"When deploying to this stage, swap this setting."*
   <div class="card card-md card-dev">
     <div class="card-title-md">Dev Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
       <div class="arrow-label">↓ default</div>
-      <div class="box box-item bg-blue">LH (Dev)</div>
+      <div class="box box-item bg-blue">Sales Bronze (Dev)</div>
     </div>
   </div>
   <div class="flow-col-center">
@@ -63,9 +63,9 @@ A deployment rule says: *"When deploying to this stage, swap this setting."*
   <div class="card card-md card-prod">
     <div class="card-title-md">Prod Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-orange">Notebook</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
       <div class="arrow-label">↓ default</div>
-      <div class="box box-item bg-green">LH (Prod) ✅</div>
+      <div class="box box-item bg-green">Sales Bronze (Prod) ✅</div>
     </div>
   </div>
 </div>

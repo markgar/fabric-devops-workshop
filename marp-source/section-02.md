@@ -50,11 +50,6 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
     <div class="card-subtitle-sm">Build & iterate</div>
   </div>
   <span class="arrow-lg">→</span>
-  <div class="card card-test">
-    <div class="card-title">🧪 Test</div>
-    <div class="card-subtitle-sm">Validate & review</div>
-  </div>
-  <span class="arrow-lg">→</span>
   <div class="card card-prod">
     <div class="card-title">🏭 Production</div>
     <div class="card-subtitle-sm">Live for users</div>
@@ -73,23 +68,10 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
   <div class="card card-md card-dev">
     <div class="card-title-md">Dev Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-blue">Lakehouse</div>
-      <div class="box box-item bg-orange">Notebook</div>
-      <div class="box box-item bg-purple">Semantic Model</div>
-      <div class="box box-item bg-yellow">Report</div>
-    </div>
-  </div>
-  <div class="flow-col-center">
-    <div class="arrow-label-sm">Deploy</div>
-    <span class="arrow-md">→</span>
-  </div>
-  <div class="card card-md card-test">
-    <div class="card-title-md">Test Workspace</div>
-    <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-blue">Lakehouse</div>
-      <div class="box box-item bg-orange">Notebook</div>
-      <div class="box box-item bg-purple">Semantic Model</div>
-      <div class="box box-item bg-yellow">Report</div>
+      <div class="box box-item bg-blue">Sales Bronze</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
+      <div class="box box-item bg-purple">Sales Analysis</div>
+      <div class="box box-item bg-yellow">Revenue Dashboard</div>
     </div>
   </div>
   <div class="flow-col-center">
@@ -99,10 +81,10 @@ A Fabric feature that lets you **deploy content between workspaces** in stages
   <div class="card card-md card-prod">
     <div class="card-title-md">Prod Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-item bg-blue">Lakehouse</div>
-      <div class="box box-item bg-orange">Notebook</div>
-      <div class="box box-item bg-purple">Semantic Model</div>
-      <div class="box box-item bg-yellow">Report</div>
+      <div class="box box-item bg-blue">Sales Bronze</div>
+      <div class="box box-item bg-orange">Transform Orders</div>
+      <div class="box box-item bg-purple">Sales Analysis</div>
+      <div class="box box-item bg-yellow">Revenue Dashboard</div>
     </div>
   </div>
 </div>

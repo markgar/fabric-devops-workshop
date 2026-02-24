@@ -43,6 +43,38 @@ So far, everyone works in **one Dev workspace** and commits straight to `main`
 
 ---
 
+# Inner Loop vs Outer Loop
+
+Two development cycles that shape how you work:
+
+<div class="comparison" style="gap: 40px;">
+
+<div>
+<h4>🔁 Inner Loop</h4>
+<div class="flow-col" style="gap: 6px;">
+  <div class="box box-sm bg-blue-muted">Code → Test → Fix → Repeat</div>
+  <div class="box box-sm bg-blue-muted">Your personal dev workspace</div>
+  <div class="box box-sm bg-blue-muted">Fast — seconds to minutes</div>
+  <div class="box box-sm bg-blue-muted">Private — just you</div>
+</div>
+</div>
+
+<div>
+<h4>🚀 Outer Loop</h4>
+<div class="flow-col" style="gap: 6px;">
+  <div class="box box-sm bg-green">Commit → Review → Deploy</div>
+  <div class="box box-sm bg-green">Git repo + deployment pipeline</div>
+  <div class="box box-sm bg-green">Slower — minutes to hours</div>
+  <div class="box box-sm bg-green">Shared — team and users</div>
+</div>
+</div>
+
+</div>
+
+**The challenge:** In Fabric, workspaces are shared — so each developer needs their **own workspace** and **own branch** to get a private inner loop.
+
+---
+
 # Feature Branches + Workspaces
 
 Each developer gets their **own branch** and their **own workspace**
@@ -63,8 +95,9 @@ Each developer gets their **own branch** and their **own workspace**
     <span class="arrow-md">→</span>
   </div>
   <div class="card card-sm card-dev" style="padding: 10px 14px;">
-    <div class="card-title-sm">Dev Workspace</div>
+    <div class="card-title-sm">🔒 CI Workspace</div>
     <div style="font-size: 0.5em; color: #555;">main (merged code)</div>
+    <div style="font-size: 0.45em; color: #2E8B57; font-weight: bold;">Read only — no direct commits</div>
   </div>
   <div class="flow-col-center">
     <div class="arrow-label-sm">Deploy</div>
@@ -79,7 +112,7 @@ Each developer gets their **own branch** and their **own workspace**
 - **Branch policies** block direct commits to `main`
 - **Pull requests** are the only way in — with review and approval
 - **Branch out** in Fabric creates the branch + workspace in one step
-- Done? Delete the branch — or **keep your workspace** and switch it to the next feature branch
+- Done? Delete the branch in **GitHub** — or **keep your workspace** and switch it to the next feature branch
 
 ---
 

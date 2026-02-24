@@ -90,30 +90,30 @@ Think of it like a save point in a video game — you can always come back to it
   <div class="card card-sm card-workspace">
     <div class="card-title-sm">🏢 Fabric Workspace</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-xs bg-blue">Lakehouse</div>
-      <div class="box box-xs bg-orange">Notebook</div>
-      <div class="box box-xs bg-purple">Semantic Model</div>
-      <div class="box box-xs bg-yellow">Report</div>
+      <div class="box box-xs bg-blue">Sales Bronze</div>
+      <div class="box box-xs bg-orange">Transform Orders</div>
+      <div class="box box-xs bg-purple">Sales Analysis</div>
+      <div class="box box-xs bg-yellow">Revenue Dashboard</div>
     </div>
   </div>
   <div class="flow-col-center">
-    <div class="arrow-label">Commit →</div>
+    <div class="arrow-label">Commit/Push →</div>
     <span class="arrow-md">⇄</span>
-    <div class="arrow-label">← Update</div>
+    <div class="arrow-label">← Pull</div>
   </div>
   <div class="card card-sm card-git">
     <div class="card-title-sm">🔀 Git Repository</div>
     <div class="flow-col" style="margin-top: 6px; gap: 3px;">
-      <div class="box box-xs bg-mono">Lakehouse.Lakehouse/</div>
-      <div class="box box-xs bg-mono">Notebook.Notebook/</div>
-      <div class="box box-xs bg-mono">Model.SemanticModel/</div>
-      <div class="box box-xs bg-mono">Report.Report/</div>
+      <div class="box box-xs bg-mono">Sales Bronze.Lakehouse/</div>
+      <div class="box box-xs bg-mono">Transform Orders.Notebook/</div>
+      <div class="box box-xs bg-mono">Sales Analysis.SemanticModel/</div>
+      <div class="box box-xs bg-mono">Revenue Dashboard.Report/</div>
     </div>
   </div>
 </div>
 
-- **Commit** — push changes from your workspace to Git
-- **Update** — pull changes from Git into your workspace
+- **Commit/Push** — save and push changes from your workspace to Git
+- **Pull** — pull changes from Git into your workspace
 - Fabric **serializes** each item as files/folders in the repo
 
 ---
